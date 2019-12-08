@@ -453,14 +453,14 @@ form textarea {
     float: left;
     width: 87%;
     margin-left: 5px;
-    padding: 1%;
+    padding: 1%;    
 }
 
 #f_article #articles article {
     float: right;
     width: 31.33%;
     border: 1px solid silver;
-    box-sizing: border-box;
+
     border-radius: 5px;
     background-color: #fafafa;
     margin-right: 2%;
