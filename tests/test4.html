@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test 4</title>
+	<meta name="keywords" content="test, site, website" />
+    <meta name="description" content="Сайт группы Paper Лицея 7" />
+    <!-- <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/article.css" rel="stylesheet" type="text/css" />-->
+    <link href="../img/paperLogo.jpg" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/test.js"></script>
+</head>
+<body>
+	<img src="1.jpg" alt="Изображение" title="Изображение"><br>
+	<img src="2.jpg" ><br>
+	<img src="3.jpg" ><br>
+	<img src="4.jpg" alt="Изображение" title="Изображение"><br>
+
+	<script type="text/javascript">
+		$(":not(img[alt])").attr("alt", "jQuery");
+
+		var elements = $("img");
+		var text = '';
+		for (var i = 0; i < elements.length; i++) {
+			text += elements.get(i).alt + "\n";
+		}
+		alert(text);
+	</script>
+</body>
+</html>
