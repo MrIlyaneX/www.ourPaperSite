@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test2</title>
+	<meta name="keywords" content="test, site, website" />
+    <meta name="description" content="Сайт группы Paper Лицея 7" />
+    <!-- <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/article.css" rel="stylesheet" type="text/css" />-->
+    <link href="../img/paperLogo.jpg" rel="shortcut icon" type="image/x-icon" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/test.js"></script>
+</head>
+<body>
+	<big>
+	    <div class="test"> Title winda</div>
+	    <div class="test">Put Yep Dayly</div>
+	    <p class="test"> Some in text and text in U</p>
+	    <p class="test"> Text in U and Some in text </p>
+
+	    <img src="../article/img/color.jpg" alt="1" >
+	    <img src="../article/img/color.jpg" alt="1" title="1">
+
+
+	    <ul id="menu">
+	    	<li><a href="">Ссылка Адин</a></li>
+	    	<li><a href="">Ссылка Двас</a></li>
+	    	<li><a href="">Ссылка Тре</a></li>
+	    	<li><a href="">Ссылка Щатыре</a></li>
+	    	<li><a href="">Ссылка Пьянь</a></li>
+	    </ul>
+	    <a href="">Ссылка Шань_ФянЪ</a>
+
+	    <script type="text/javascript">
+	    	//отбор teg.class и в цикле действия с отобранными тегами
+	        var test = $('div.test');
+	    	for(var i = 0;i < test.length;i++){
+	    		test.get(i).style.backgroundColor = "red";
+	    	}
+	    	//изменение цвета по отбору teg.class (отбор по классам) индекс и действие
+	    	setTimeout("$('p.test').get(0).style.color = 'blue'", 2000);
+	    	setTimeout("$('p.test').get(1).style.color = 'green'", 1000);
+
+	    	//отбор по тегам
+	    	var test = $("div");
+	    	alert(test.length);
+	    	//+атрибут
+	    	var img = $("img[title]");
+	    	alert(img.length);
+
+	    	//типо точный отбор
+	    	var link = $("#menu li a:first");
+	    	alert(link.html());
+
+	    	var link = $("#menu li a:eq(2)");
+	    	alert(link.html());
+	    </script>
+    </big>
+</body>
+</html>
