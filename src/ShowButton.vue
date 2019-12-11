@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<button style="color: red; background-color: black; border-color: black;" :value="show" @click="$emit('!show')">{{ mess }}</button>
+		<button style="color: red; background-color: #151a23; border-color: black;" :value="show" @click="CloseBlock()"><big>{{ mess }}</big></button>
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 		data(){
 			return{
 				mess: 'Сжать',
-				show: '!show'
+				show: !'show'
 			}
 		},
 		methods: {

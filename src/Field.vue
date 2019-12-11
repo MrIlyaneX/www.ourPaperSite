@@ -15,7 +15,7 @@
 		},
 		methods: {
 			changeMess (event){
-				this.mess = event.target.value;
+				this.mess = !show;
 				this.$emit('messChange', this.mess);
 			}
 		}
